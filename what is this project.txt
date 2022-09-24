@@ -1,0 +1,15 @@
+this is an online book store web application which will have simple login and registration functionality for users, and the details
+of the users will be managed in the my sql database and managed by the admin.
+
+----- WORK OF ADMIN -----
+admin will be responsible for managing the details of the users and also the details of the books.
+
+
+----- USER -----
+user can register and login with his/her credentials and can purchase the book or rent a book from the book store.
+but for the initial phase, the user will only be able to purchase the book since the rent facility will not be available for initial phase.
+
+the book purchase can be done by either adding books to the cart or purchasing single book.
+
+----- BOOK -----
+all the books will have price, name of the author, and little description of the book.
