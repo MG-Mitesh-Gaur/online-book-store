@@ -1,0 +1,32 @@
+:root {
+    --custom-bg : #1c1c1c;
+    --vertical-padding-flow: 1rem;
+    --horizontal-padding-flow: 1rem;
+    --theme-yellow-color: #fbbf00;
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.custom-bg {
+    background-color: var(--custom-bg) !important
+}
+
+.vertical-padding-flow {
+    padding-top: var(--vertical-padding-flow);
+    padding-bottom: var(--vertical-padding-flow);
+}
+
+.horizontal-padding-flow {
+    padding-left: var(--horizontal-padding-flow);
+    padding-right: var(--horizontal-padding-flow);
+}
+
+.theme-yellow-color-bg {
+    background-color: var(--theme-yellow-color);
+}
+
+.theme-yellow-color-text {
+    color: var(--theme-yellow-color) !important;
+}

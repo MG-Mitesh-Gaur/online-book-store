@@ -1,0 +1,63 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+<main class="custom-bg vertical-padding-flow">
+    <div class="horizontal-padding-flow container">
+        <div class="col-md-3">
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2016/11/14/03/16/book-1822474_960_720.jpg" alt="children_book_image" class="img-responsive w-100 rounded-3">
+            </div>
+            <div class="book-details pt-1">
+                <div class="text-decoration-none text-light d-flex align-items-center fs-5 fw-light">
+                    <span class="material-symbols-outlined" style="color: #c0c0c0;">person</span>
+                    <span class="ms-2 pt-1">Author name</span>
+                </div>
+                <div class="text-decoration-none text-light d-flex align-items-center fs-5 fw-light">
+                    <span class="material-symbols-outlined" style="color: #c0c0c0;">description</span>
+                    <span class="ms-2 pt-1">Book description</span>
+                </div>
+            </div>
+            <div class="likes-and-votes pt-1" id="likes-and-votes">
+                <div href="javascript:void(0)" class="text-decoration-none text-light d-flex align-items-center fs-5 fw-light">
+                    <a href="javascript:void(0)" id="likes-and-votes-button" class="d-inline-flex text-decoration-none"><span class="material-symbols-outlined" style="color: #c0c0c0;">thumb_up</span></a>
+                    <span class="ms-2 pt-1">100 votes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="bottom-fixed-navbar-mobile custom-bg position-absolute bottom-0 w-100 d-md-none">
+    <div class="py-1 container d-flex align-items-center justify-content-between">
+        <div href="javascript:void(0)" class="text-decoration-none text-light d-flex align-items-center fs-5 fw-light">
+            <a href="javascript:void(0)" id="likes-and-votes-button" class="d-inline-flex text-decoration-none"><span class="material-symbols-outlined" style="color: #c0c0c0; font-size: 2.5rem;">home</span></a>
+        </div>
+
+        <div href="javascript:void(0)" class="text-decoration-none text-light d-flex align-items-center fs-5 fw-light">
+            <a href="javascript:void(0)" id="likes-and-votes-button" class="d-inline-flex text-decoration-none"><span class="material-symbols-outlined" style="color: #c0c0c0; font-size: 2.5rem;">search</span></a>
+        </div>
+
+        <div href="javascript:void(0)" class="text-decoration-none text-light d-flex align-items-center fs-5 fw-light">
+            <a href="javascript:void(0)" id="likes-and-votes-button" class="d-inline-flex text-decoration-none"><span class="material-symbols-outlined" style="color: #c0c0c0; font-size: 2.5rem;">add</span></a>
+        </div>
+
+        <div href="javascript:void(0)" class="text-decoration-none text-light d-flex align-items-center fs-5 fw-light">
+            <a href="javascript:void(0)" id="likes-and-votes-button" class="d-inline-flex text-decoration-none"><span class="material-symbols-outlined" style="color: #c0c0c0; font-size: 2.5rem;">person</span></a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#likes-and-votes-button').click(function() {
+            // $(this)
+            alert('Like count function working')
+        });
+
+        $('.bottom-fixed-navbar-mobile .material-symbols-outlined').click(function() {
+            $(this).parent().children('.bottom-fixed-navbar-mobile .material-symbols-outlined').hasClass('theme-yellow-color-text') ? $(this).removeClass('theme-yellow-color-text') : $(this).toggleClass('theme-yellow-color-text');
+        });
+    });
+</script>
+{% endblock %}
